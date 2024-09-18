@@ -1,0 +1,148 @@
+@import url('./small.css');
+@import url('./large.css');
+@import url('./medium.css');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#container {
+    width: 100vw;
+    height: auto;
+    background-image: url("../photos/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: auto;
+    /* display: grid;
+    grid-template-rows: 6vh 84vh 10vh;
+    grid-template-columns: 70vw 30vw;
+    grid-template-areas:
+        "hd hd"
+        "mn mn"
+        "ft ft"; */
+
+}
+
+#foot {
+
+    width: 100%;
+}
+
+/* .certificate-container {
+    margin-bottom: 20px;
+    width: 98vw;
+    border: 1px solid #ddd;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.certificate-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.certificate-image {
+    max-width: 100%;
+    height: auto;
+    margin: 100px;
+} */
+
+/* #container2 {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+} */
+
+
+
+
+#cert{
+    height: 150vh;
+    margin-top: 100px;
+    
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". c1 ."
+    ". c2 ."
+    ". c3 ."
+    ;
+    gap: 5%;
+}
+#cert1{
+grid-area: c1;
+
+}
+#cert2{
+    grid-area: c2;
+    
+}
+#cert3{
+    grid-area: c3;
+   
+}
+#img1{
+    width: 80vw;
+}
+#img2{
+    width: 80vw;
+}
+#img3{
+    width: 80vw;
+   
+}
+
+/*--------------------------------------*/
+.project-image {
+    display: none;
+    width: 100%;
+    height: auto;
+   
+}
+/*---------------------------------------*/
+
+.cont {
+    display: none;
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.img-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
